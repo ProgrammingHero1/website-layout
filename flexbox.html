@@ -8,11 +8,22 @@
     <style>
         .container{
             border: 3px dotted purple;
+            display: flex;
+            align-items: stretch;
+            /* justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; */
+            height: 300px;
         }
         .box{
+            font-size: 3ex;
+            font-weight: 700;
             border: 3px dashed peru;
             width: 100px;
-            height: 100px;
+            /* height: 100px; */
+        }
+        #box-2{
+            flex-grow: 1;
         }
     </style>
 </head>
@@ -20,8 +31,7 @@
     <!-- .container>.box{Box-$}*3 -->
     <div class="container">
         <div class="box">Box-1</div>
-        <div class="box">Box-2</div>
-        <div class="box">Box-3</div>
+        <div id="box-2" class="box">Box-2</div>
     </div>
 </body>
 </html>
